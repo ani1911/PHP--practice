@@ -1,0 +1,74 @@
+/* Simple page and form styles */
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --muted: #6b7280;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family:
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background: var(--bg);
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 640px;
+  margin: 48px auto;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+h1 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+form > div {
+  margin-bottom: 12px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button[type="submit"]:hover {
+  opacity: 0.95;
+}
+ul.errors {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: 6px;
+}
+a {
+  color: var(--accent);
+}
