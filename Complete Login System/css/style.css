@@ -1,0 +1,98 @@
+/* Minimal clean styles for the simplified forms */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial;
+  background: #f3f6fb;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+.center {
+  max-width: 920px;
+  margin: 48px auto;
+  padding: 20px;
+}
+.forms-row {
+  display: grid;
+  gap: 18px;
+}
+.panel {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+}
+.panel h3 {
+  margin: 0 0 14px 0;
+  font-size: 1.15rem;
+  color: #0b3d91;
+}
+form {
+  display: grid;
+  gap: 10px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6eef8;
+  background: #fbfdff;
+  font-size: 0.95rem;
+}
+input::placeholder {
+  color: #9aa8c7;
+}
+button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #2563eb;
+  color: #fff;
+}
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+@media (min-width: 720px) {
+  .forms-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 719px) {
+  .center {
+    padding: 12px;
+  }
+}
+
+.form-error {
+  color: #d93025;
+  background-color: #fdecea;
+  border: 1px solid #f5c2c7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-success {
+  color: #064e3b;
+  background-color: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
